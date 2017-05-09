@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Janus Kiong - Trashifai</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/portfolio-item.css" rel="stylesheet">
+
+	<!-- Custom fonts for this template -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Temporary navbar container fix -->
+    <style>
+    .navbar-toggler {
+        z-index: 1;
+    }
+    
+    @media (max-width: 576px) {
+        nav > .container {
+            width: 100%;
+        }
+    }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">Janus Kiong</a>
+            <div class="collapse navbar-collapse" id="navbarExample">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Portfolio Item Heading -->
+        <h1 class="my-4">Trashifai <small>Smart bin that sorts waste</small></h1>
+
+        <!-- Portfolio Item Row -->
+        <div class="row">
+
+            <div class="col-md-6">
+                <img class="img-fluid" src="img/trashifai-logo.png" alt="">
+            </div>
+
+            <div class="col-md-6">
+                <h3 class="my-3">Project Description</h3>
+                <p>Trashifai is a smart bin that sorts waste by using AI to identify the waste and sort into recyclable/non-recyclables for easy waste management. Trashifai was conceptualized and built during Wildhacks 2016, a hackathon held at Northwestern University.</p>
+                <h3 class="my-3">Ideate</h3>
+				<p>We thought of using images to train an AI to identify waste because we wanted to use Clarifai, a platform for image recognition. We chose to do a waste sorting bin as it combines both hardware and software while solving a huge problem of wrongly sorted waste.</p>
+            </div>
+
+        </div>
+		<div class="row">
+
+            <div class="col-md-6">
+                <img class="img-fluid" src="img/trashifai-hardware.jpg" alt="">
+            </div>
+
+            <div class="col-md-6">
+                <h3 class="my-3">Hardware</h3>
+                <p>We used an Arduino as the controller of the bin and a laptop for its camera to take a picture of the waste and to run the API call for the AI to identify the object. 2 ultrasound sensors were used to detect the remaining capacity of the bin.</p>
+                <h3 class="my-3">Software</h3>
+				<p>We trained the AI using thousands of images that split the objects into 2 groups, recyclables and non-recyclables. We used Python to run the API call to identify the image of the waste which then sends a signal to the Arduino to turn the servo to dispose the waste in the correct section. We used Twillo to send SMS to the owner when the ultrasound sensors detect the bins are full.</p>
+				<p>Here is the link to the <a href="http://trashifai.me/">website</a>, the <a href="https://github.com/shikai93/trashifai">Github repository</a>, and an <a href="http://blog.clarifai.com/clarifai-featured-hack-trashifai-is-a-smart-trash-can-that-auto-sorts-recyclables/#.WQeyL9IrJPY">article</a>.</p>
+            </div>
+		</div>
+		<div class="row">
+
+            <div class="col-md-6">
+                <img class="img-fluid" src="img/trashifai-team.jpg" alt="">
+            </div>
+			<div class="col-md-6">
+				<h3 class="my-3">Tools</h3>
+				<p>Python, Arduino, Clarifai</p>
+				<h3 class="my-3">Team</h3>
+				<p>Janus Kiong, Muhd Adam, Natalie Chin, Ng Shi Kai</p>
+			</div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Related Projects Row -->
+        <h3 class="my-4">Other Projects</h3>
+
+        <div class="row">
+
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="catnip.html">
+                    <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+					<p>Catnip</p>
+                </a>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="jurassic.html">
+                    <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+					<p>JuraSSiC</p>
+				</a>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="cot.html">
+                    <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+					<p>CoT</p>
+				</a>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="biofugal.html">
+                    <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+					<p>BioFugal</p>
+				</a>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <section id="contact">
+	<a name="contact"></a>
+    <footer>
+        <div class="container">
+            <ul class="list-inline intro-social-buttons">
+                    <li class="list-inline-item">
+                        <a href="mailto:janus.kiong@gmail.com" class="btn btn-secondary btn-lg"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">Email</span></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://github.com/JnusK" class="btn btn-secondary btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.linkedin.com/in/januskiong/" class="btn btn-secondary btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                    </li>
+					<li class="list-inline-item">
+                        <a href="file/resume.pdf" class="btn btn-secondary btn-lg"><i class="fa fa-file-text fa-fw"></i> <span class="network-name">Résumé</span></a>
+                    </li>
+                </ul>
+            <p class="copyright text-muted small">Copyright &copy; Janus Kiong 2017. All Rights Reserved</p>
+        </div>
+    </footer>
+	</section>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/tether/tether.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+/*!
+ * Start Bootstrap - Portfolio Item (http://startbootstrap.com/template-overviews/portfolio-item)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-portfolio-item/blob/master/LICENSE)
+ */
+
+body {
+	font-family: Trebuchet MS, sans-serif;
+	font-weight: 700;
+    padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 56px;
+    }
+}
+
+footer {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+p.copyright {
+    margin: 15px 0 0;
+}
+
+.row {
+	margin-bottom: 20px;
+}
