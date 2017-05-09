@@ -19,7 +19,10 @@ h5,
 h6 {
     font-family: Trebuchet MS, sans-serif;
     font-weight: 700;
-	background-color: #eff5ff;
+}
+
+body {
+		background-color: #eff5ff;
 }
 
 .intro-header {
