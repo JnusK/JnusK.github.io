@@ -168,3 +168,23 @@ footer {
 p.copyright {
     margin: 15px 0 0;
 }
+
+#photo-container {
+  height: 400px;
+  width: 400px;
+  position: relative;
+}
+#photo {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#credits {
+  z-index: 100;
+  position: absolute;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  left: 150px;
+  top: 350px;
+}
