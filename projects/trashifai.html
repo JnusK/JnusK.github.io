@@ -64,13 +64,14 @@
     <div class="container">
 
         <!-- Portfolio Item Heading -->
-        <h1 class="my-4">Trashifai <small>Smart bin that sorts waste</small></h1>
+        <h1 class="my-4">Trashifai</h1>
+		<h2 class="my-4"><small>Smart bin that sorts waste using AI</small></h2>
 
         <!-- Portfolio Item Row -->
         <div class="row">
 
             <div class="col-md-6">
-                <img class="img-fluid" src="img/trashifai-logo.png" alt="">
+                <img class="img-fluid" src="img/trashifai-logo.jpg" alt="">
             </div>
 
             <div class="col-md-6">
@@ -90,10 +91,18 @@
             <div class="col-md-6">
                 <h3 class="my-3">Hardware</h3>
                 <p>We used an Arduino as the controller of the bin and a laptop for its camera to take a picture of the waste and to run the API call for the AI to identify the object. 2 ultrasound sensors were used to detect the remaining capacity of the bin.</p>
-                <h3 class="my-3">Software</h3>
+            </div>
+		</div>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a href="https://drive.google.com/file/d/0B_v-8cJZYSKEVjFlcGNILWpnclE/preview" target="_blank"><img class="img-fluid"  src="img/trashifai-prototype.jpg"></a>
+			</div>
+			<div class="col-md-6">
+				<h3 class="my-3">Software</h3>
 				<p>We trained the AI using thousands of images that split the objects into 2 groups, recyclables and non-recyclables. We used Python to run the API call to identify the image of the waste which then sends a signal to the Arduino to turn the servo to dispose the waste in the correct section. We used Twillo to send SMS to the owner when the ultrasound sensors detect the bins are full.</p>
 				<p>Here is the link to the <a href="http://trashifai.me/">website</a>, the <a href="https://github.com/shikai93/trashifai">Github repository</a>, and an <a href="http://blog.clarifai.com/clarifai-featured-hack-trashifai-is-a-smart-trash-can-that-auto-sorts-recyclables/#.WQeyL9IrJPY">article</a>.</p>
-            </div>
+			</div>
 		</div>
 		<div class="row">
 
@@ -101,10 +110,11 @@
                 <img class="img-fluid" src="img/trashifai-team.jpg" alt="">
             </div>
 			<div class="col-md-6">
-				<h3 class="my-3">Tools</h3>
-				<p>Python, Arduino, Clarifai</p>
 				<h3 class="my-3">Team</h3>
 				<p>Janus Kiong, Muhd Adam, Natalie Chin, Ng Shi Kai</p>
+				<h3 class="my-3">Tools</h3>
+				<p>Python, Arduino, Clarifai</p>
+				
 			</div>
         </div>
         <!-- /.row -->
@@ -116,28 +126,28 @@
 
             <div class="col-md-3 col-sm-6 mb-4">
                 <a href="catnip.html">
-                    <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+                    <img class="img-fluid" src="img/catnip-index.jpg" alt="">
 					<p>Catnip</p>
                 </a>
             </div>
 
             <div class="col-md-3 col-sm-6 mb-4">
                 <a href="jurassic.html">
-                    <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+                    <img class="img-fluid" src="img/jurassic-index.jpg" alt="">
 					<p>JuraSSiC</p>
 				</a>
             </div>
 
             <div class="col-md-3 col-sm-6 mb-4">
-                <a href="cot.html">
+                <a href="industrialdesign.html">
                     <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-					<p>CoT</p>
+					<p>Industrial Design</p>
 				</a>
             </div>
 
             <div class="col-md-3 col-sm-6 mb-4">
                 <a href="biofugal.html">
-                    <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+                    <img class="img-fluid" src="img/biofugal-index.jpg" alt="">
 					<p>BioFugal</p>
 				</a>
             </div>
@@ -164,7 +174,7 @@
                         <a href="https://www.linkedin.com/in/januskiong/" class="btn btn-secondary btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
                     </li>
 					<li class="list-inline-item">
-                        <a href="../file/resume.pdf" class="btn btn-secondary btn-lg"><i class="fa fa-file-text fa-fw"></i> <span class="network-name">Résumé</span></a>
+                        <a href="../file/resume.pdf" target="_blank" class="btn btn-secondary btn-lg"><i class="fa fa-file-text fa-fw"></i> <span class="network-name">Résumé</span></a>
                     </li>
                 </ul>
             <p class="copyright text-muted small">Copyright &copy; Janus Kiong 2017. All Rights Reserved</p>

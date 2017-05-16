@@ -64,7 +64,8 @@
     <div class="container">
 
         <!-- Portfolio Item Heading -->
-        <h1 class="my-4">JuraSSiC <small>Evasive autonomous robot</small></h1>
+        <h1 class="my-4">JuraSSiC</h1>
+		<h2 class="my-4"><small>Autonomous evasive robot</small></h2>
 
         <!-- Portfolio Item Row -->
         <div class="row">
@@ -87,15 +88,15 @@
 
             <div class="col-md-6">
                 <h3 class="my-3">Research</h3>
-				<p>We were given a teensy microcontroller.</p>
+				<p>We were given a Teensy microcontroller and an Xbee which will recieve the location of the pursuing robot.</p>
 				<p>We chose a tracked chassis as the base of our robot to achieve a small turning radius and stable base over uneven terrain.</p>
-				<p>We chose to use 3 different sensors for detection of different range and surfaces as the robot has to separate obstacles from the pursuing robot.</p>
+				<p>We chose to use 3 different sensors for detection of different range and surfaces.</p>
 				<ul>
                     <li>
                         <p>Button for sensing collision</p>
                     </li>
                     <li>
-                        <p>Laser with phototransistor to detect photo reflective surface of pursuer</p>
+                        <p>Vive sensor for position and location of pursuing robot</p>
                     </li>
 					<li>
                         <p>Ultrasound sensor for obstacle detection</p>
@@ -107,26 +108,27 @@
 		<div class="row">
 
             <div class="col-md-6">
-                <img class="img-fluid" src="http://placehold.it/750x500" alt="">
+                <img class="img-fluid" src="img/jurassic-arena.jpg" alt="img/jurassic-final.jpg">
             </div>
 
             <div class="col-md-6">
 				<h3 class="my-3">Algorithm</h3>
-                <p>We decided to use a “wait-and-see” algorithm where our robot will spin on the spot till it spots the pursuer before taking evasive actions.</p>
-				<p>We chose to use interrupts instead of polling for our sensors as it will take up less time on the processor running the motor.</p>
+                <p>Our algorithm splits up the arena into quardrants and once our robot detects the pursuing robot, it will go to the furthest corner from the pursuing robot by hugging the walls.</p>
+				<p>We chose to use interrupts instead of polling for our bumpers to not waste processor cycles on polling for state of button.</p>
                 
             </div>
 		</div>	
 		<div class="row">
 
             <div class="col-md-6">
-                <img class="img-fluid" src="http://placehold.it/750x500" alt="">
+                <img class="img-fluid" src="img/jurassic-team.jpg" alt="">
             </div>	
 			<div class="col-md-6">
-				<h3 class="my-3">Tools</h3>
-				<p>Arduino</p>
 				<h3 class="my-3">Team</h3>
 				<p>Cyndi Teh, Janus Kiong, Ng Shi Kai, Wong Song Wei</p>
+				<h3 class="my-3">Tools</h3>
+				<p>Arduino</p>
+				
 			</div>
         </div>
         <!-- /.row -->
@@ -138,28 +140,28 @@
 
             <div class="col-md-3 col-sm-6 mb-4">
                 <a href="catnip.html">
-                    <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+                    <img class="img-fluid" src="img/catnip-index.jpg" alt="">
 					<p>Catnip</p>
                 </a>
             </div>
 
             <div class="col-md-3 col-sm-6 mb-4">
                 <a href="trashifai.html">
-                    <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+                    <img class="img-fluid" src="img/trashifai-index.jpg" alt="">
 					<p>Trashifai</p>
 				</a>
             </div>
 
             <div class="col-md-3 col-sm-6 mb-4">
-                <a href="cot.html">
+                <a href="industrialdesign.html">
                     <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-					<p>CoT</p>
+					<p>Industrial Design</p>
 				</a>
             </div>
 
             <div class="col-md-3 col-sm-6 mb-4">
                 <a href="biofugal.html">
-                    <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+                    <img class="img-fluid" src="img/biofugal-index.jpg" alt="">
 					<p>BioFugal</p>
 				</a>
             </div>
@@ -186,7 +188,7 @@
                         <a href="https://www.linkedin.com/in/januskiong/" class="btn btn-secondary btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
                     </li>
 					<li class="list-inline-item">
-                        <a href="../file/resume.pdf" class="btn btn-secondary btn-lg"><i class="fa fa-file-text fa-fw"></i> <span class="network-name">Résumé</span></a>
+                        <a href="../file/resume.pdf" target="_blank" class="btn btn-secondary btn-lg"><i class="fa fa-file-text fa-fw"></i> <span class="network-name">Résumé</span></a>
                     </li>
                 </ul>
             <p class="copyright text-muted small">Copyright &copy; Janus Kiong 2017. All Rights Reserved</p>
