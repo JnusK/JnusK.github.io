@@ -174,11 +174,7 @@ p.copyright {
   width: 400px;
   position: relative;
 }
-#photo {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
+
 #credits {
   z-index: 100;
   position: absolute;
